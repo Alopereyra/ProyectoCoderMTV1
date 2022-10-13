@@ -56,8 +56,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            #r"C:\Users\ALe\Desktop\Ale\PythonProyectoMTV1\ProyectoCoder\AppCoder\template"
-            f"{BASE_DIR}/PythonProyectoMTV1/ProyectoCoder/AppCoder/template"
+            r"C:\Users\ALe\Desktop\Ale\PythonProyectoMTV1\ProyectoCoder\AppCoder\template"
+            #f"{BASE_DIR}/PythonProyectoMTV1/ProyectoCoder/AppCoder/template"
         ],
         'APP_DIRS': True,
         'OPTIONS': {

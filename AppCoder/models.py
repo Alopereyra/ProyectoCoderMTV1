@@ -2,6 +2,7 @@ import email
 from inspect import classify_class_attrs
 from django.db import models
 
+
 # Create your models here.
 
 class Curso(models.Model):

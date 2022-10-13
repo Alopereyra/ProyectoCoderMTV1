@@ -12,10 +12,16 @@ from AppCoder.models import Familiares
 def crear_familiar(request):
     template = loader.get_template("template1.html")
     
-    pariente = Familiares(nombre="Eduardo, ", parentezco="Padre, ", edad="69, ", fecha_de_nacimiento="02-06-1953")
-    pariente2 = Familiares(nombre="Mirta, ", parentezco="Madre, ", edad="67, ", fecha_de_nacimiento="23-08-1955")
-    pariente3 = Familiares(nombre="Lorena, ", parentezco="Esposa, ", edad="36, ", fecha_de_nacimiento="10-02-1986")
-    pariente4 = Familiares(nombre="Luciano, ", parentezco="Hermano, ", edad="26, ", fecha_de_nacimiento="22-01-1996")
+    pariente = Familiares(nombre="Eduardo, ", parentezco="Padre, ", edad="69, ", fecha_de_nacimiento="1953-02-06")
+    pariente2 = Familiares(nombre="Mirta, ", parentezco="Madre, ", edad="67, ", fecha_de_nacimiento="1955-03-08")
+    pariente3 = Familiares(nombre="Lorena, ", parentezco="Esposa, ", edad="36, ", fecha_de_nacimiento="1986-10-02")
+    pariente4 = Familiares(nombre="Luciano, ", parentezco="Hermano, ", edad="26, ", fecha_de_nacimiento="1996-01-22")
+    
+    pariente.save()
+    pariente2.save()
+    pariente3.save()
+    pariente4.save()
+    
     
     dict_de_contexto = {
         "familia": pariente,
